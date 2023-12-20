@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     sessionConversations[sessionId] = messages;
 
     const gptResponse = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "dall-e-3",
       messages: [{"role": "user", content: prompt}],
     });
     console.log(gptResponse.choices[0].message);

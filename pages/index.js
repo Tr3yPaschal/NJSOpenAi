@@ -49,8 +49,10 @@ export default function Chat() {
   };
 
   return (
-    <div className="container h-screen flex flex-col bg-white text-gray-900 px-20 mx-auto">
-      <h1 className="text-6xl font-bold pt-10">Dr. Altman</h1>
+
+<div className="bg-[url('/bg.png')] 	background-size: auto;">
+    <div className="container h-screen flex flex-col bg-white text-gray-900 px-20 mx-auto bg-scroll ">
+      <h1 className="text-6xl font-bold pt-10">TacoBot - 3000</h1>
       <div className="flex flex-col flex-1 w-full mt-6 overflow-auto pb-10">
         {messages.map((message, index) => (
           <div key={index} className="w-full my-2">
@@ -96,6 +98,7 @@ export default function Chat() {
           Send
         </button>
       </form>
+    </div>
     </div>
   );
 }
